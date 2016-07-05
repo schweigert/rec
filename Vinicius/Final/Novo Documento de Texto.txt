@@ -1,0 +1,13 @@
+cd pasta
+   muda para a pasta
+cd ..
+   volta para cima
+
+dir
+   listar diretório
+
+ruby arquivo.rb
+   executar arquivo
+
+irb
+   interactive ruby
