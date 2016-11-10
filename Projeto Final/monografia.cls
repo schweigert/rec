@@ -303,8 +303,8 @@
 %%%%%%%%%%%%%%%Novas Definicoes%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\grau#1{\gdef\@grau{#1}}
 \def\tipo#1{\gdef\@tipo{#1}}
-\def\bacharelado{\grau{BACHAREL} \tipo{Relat\'{o}rio de Trabalho de Conclus\~{a}o de Curso (TCC)}}
-\def\licenciatura{\grau{LICENCIADO} \tipo{Monografia}}
+\def\bacharelado{\grau{BACHAREL} \tipo{Relat\'{o}rio do Projeto de Conclus\~{a}o da mat\'{e}ria de Redes de Computadores}}
+\def\licenciatura{\grau{LICENCIADO} \tipo{Trabalho}}
 \def\especializacao{\grau{ESPECIALISTA} \tipo{Monografia}\es@ptrue}
 \def\mestrado{\grau{MESTRE} \tipo{Diserta\c{c}\~{a}o}\ps@dtrue}
 \def\doutorado{\grau{DOUTOR} \tipo{Tese}\ph@dtrue \ps@dtrue}
@@ -450,7 +450,7 @@
            de Gradua\c{c}\~{a}o em \@curso, da Universidade do
            Estado de Santa Catarina (\@sigla), como
            requisito parcial da disciplina de
-           Trabalho de Conclus\~{a}o de Curso. }
+           Redes de Computadores (REC). }
   \end{comentario}
  \vspace{1.5em}
  \begin{flushright}
@@ -498,17 +498,13 @@
   \vfill
   \end{center}
   \begin{comentario}
-  {        \@tipo\ apresentado ao Curso
-           de \@curso\ da \@sigla, como
-           requisito parcial para a
-		   obten\c{c}\~ao do grau
-           de \@grau\ em \@curso. }
+  {         }
   \end{comentario}
   \vfill
   %{\rmfamily Aprovado em \@data} \\
  \vfill
  \begin{center}
- {\large\bfseries BANCA EXAMINADORA}\\
+ {\large\bfseries Projeto para Rede de Computadores}\\
  \vfill
  \ifph@d
 %       \assinaturaum
