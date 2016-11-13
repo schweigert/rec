@@ -3,35 +3,80 @@
 
 \section{Redes de Computadores}
 \label{ch:redes}
-Uma rede de computadores é, em sua definição mais simples, um conjunto de computadores que trocam informações entre si. Para que essa troca de informações seja possível, são necessárias ao menos duas coisas: protocolos de comunicação e um mensageiro.
 
-Um protocolo de comunicação é uma regra – ou um conjunto de regras – para que ambas as partes envolvidas em uma troca de mensagens possam entender uma à outra. Um exemplo de protocolo de comunicação é um idioma: em geral, duas pessoas somente se entendem se estiverem falando a mesma língua. Em redes de computadores tem-se, por exemplo, o conjunto de protocolos TCP/IP, que permite a comunicação entre diferentes computadores em uma rede.
+	Uma rede de computadores é, em sua definição mais simples, um conjunto de computadores que trocam informações entre si. Para que essa troca de informações seja possível, são necessárias ao menos duas coisas: protocolos de comunicação e um mensageiro.
 
-Já o mensageiro é o responsável por levar a mensagem de uma parte à outra. Pode ser um carteiro para levar cartas, ondas mecânicas para transmitir som, ou um roteador para trocar pacotes de dados entre computadores.
+	Um protocolo de comunicação é uma regra – ou um conjunto de regras – para que ambas as partes envolvidas em uma troca de mensagens possam entender uma à outra. Um exemplo de protocolo de comunicação é um idioma: em geral, duas pessoas somente se entendem se estiverem falando a mesma língua. Em redes de computadores tem-se, por exemplo, o conjunto de protocolos TCP/IP, que permite a comunicação entre diferentes computadores em uma rede.
 
-As aplicações para redes de computadores são inúmeras. Em uma empresa, uma rede pode ser utilizada para que múltiplos empregados possam trabalhar num mesmo projeto simultaneamente, ou permitir a troca de mensagens entre diferentes pontos da empresa rapidamente. Um conjunto de computadores também pode compartilhar recursos para a execução de tarefas computacionalmente custosas, formando o que é conhecido como um cluster. Uma rede de computadores também pode ser utilizada para a transmissão de notícias, comunicação de voz e vídeo, armazenamento de informações, entre muitos outros.
+	Já o mensageiro é o responsável por levar a mensagem de uma parte à outra. Pode ser um carteiro para levar cartas, ondas mecânicas para transmitir som, ou um roteador para trocar pacotes de dados entre computadores.
 
-Porém, possivelmente a aplicação mais popular e revolucionária para redes de computadores é a Internet. Uma internet é uma rede de redes de computadores, e a Internet, com “I” maiúsculo, é uma rede de redes específica, que comunica computadores e outros dispositivos por todo o planeta, e sobre a qual está edificada a World Wide Web (WWW).
+	As aplicações para redes de computadores são inúmeras. Em uma empresa, uma rede pode ser utilizada para que múltiplos empregados possam trabalhar num mesmo projeto simultaneamente, ou permitir a troca de mensagens entre diferentes pontos da empresa rapidamente. Um conjunto de computadores também pode compartilhar recursos para a execução de tarefas computacionalmente custosas, formando o que é conhecido como um cluster. Uma rede de computadores também pode ser utilizada para a transmissão de notícias, comunicação de voz e vídeo, armazenamento de informações, entre muitos outros.
 
-Redes de computadores estão estabelecidas sobre uma série de convenções, protocolos e dispositivos físicos que, se fossem todos definidos, forneceriam material suficiente para um livro. No contexto deste trabalho, será importante definir os conceitos de roteador, switch e host.
+	Porém, possivelmente a aplicação mais popular e revolucionária para redes de computadores é a Internet. Uma internet é uma rede de redes de computadores, e a Internet, com “I” maiúsculo, é uma rede de redes específica, que comunica computadores e outros dispositivos por todo o planeta, e sobre a qual está edificada a WWW.
+	
+	Redes de computadores estão estabelecidas sobre uma série de convenções, protocolos e dispositivos físicos que, se fossem todos definidos, forneceriam material suficiente para um livro. No contexto deste trabalho, será importante definir os conceitos de roteador, switch e host.
 
-\subsection{Roteadores e Switches}
-\label{ch:roteadores e switches}
 
-Na analogia mencionada, um switch \cite{radware} é como o mensageiro na comunicação entre computadores. Ele se conecta aos computadores de uma rede, e nele estão configurados os protocolos que permitem a comunicação entre esses computadores.
+\subsection{Roteadores e switches}
+	Na analogia mencionada, um switch é como o mensageiro na comunicação entre computadores. Ele se conecta aos computadores de uma rede, e nele estão configurados os protocolos que permitem a comunicação entre esses computadores.
 
-Já um roteador exerce o mesmo papel de um switch, porém, em vez de realizar a comunicação entre computadores, ele permite a comunicação entre outros switches. Na prática, isso faz com que um roteador intermedeie a comunicação entre diferentes redes de computadores, permitindo a existência de redes de redes, incluindo a Internet.
+	Já um roteador\cite{cisco:switch} exerce o mesmo papel de um switch, porém, em vez de realizar a comunicação entre computadores, ele permite a comunicação entre outros switches. Na prática, isso faz com que um roteador intermedeie a comunicação entre diferentes redes de computadores, permitindo a existência de redes de redes, incluindo a Internet.
 
-\section{Wire Shark}
+\subsection{Hosts}
+	Todo dispositivo conectado a uma rede de computadores é chamado de host, seja esse dispositivo um computador propriamente dito, um smartphone, uma web cam, um dispositivo de segurança, ou o que for.
 
-\section{Virtual Box}
+	O termo “host”, do inglês, significa “anfitrião”, e os dispositivos conectados a uma rede de computadores são chamados assim pois eles hospedam aplicações que se utilizam dessa rede.
 
-\section{GNS3}
-GNS3 (\textit{Graphical Network Simulator 3}) é uma ferramenta OpenSource (Sob licensa MIT) para simulação, testes e análise de redes de computadores. O seu grande destaque aos demais encontra-se pela qualidade oferecida em um software totalmente gratuíto.
-\subsection{Histórico}
-GNS3 é um software que já vem com uma grande história no mercado.
-...
+	Nem todos os hosts conectados a uma rede têm a mesma importância. É comum dividir os hosts entre clientes e servidores, sendo que os servidores executam serviços importantes para a rede, enquanto clientes apenas acessam esses serviços. Um exemplo dessa relação é um banco de dados, que é hospedado em um servidor central, e pode ser acessado de quantos clientes foram necessários.
 
-\subsection{Licença}
 
-\subsection{Características}
+\section{Redes de computadores simuladas}
+\label{ch:redes simuladas}
+
+	Simulações auxiliadas por computador são hoje parte fundamental do desenvolvimento científico, permitindo estudar de forma controlada e aproximada inúmeros fenômenos de inúmeras áreas do conhecimento.
+
+	Para redes de computadores não é diferente. A simulação de tais redes \cite{cse:wustl} fornece um ambiente controlado em que podem ser estudados diferentes protocolos de comunicação, seja para avaliar sua eficiência ou mesmo para testar novos protocolos e compará-los com os já estabelecidos.
+
+	Há várias aplicações de software, tanto livres quanto comerciais, que permitem simular a comunicação entre computadores. Entre os comerciais, podem ser citados OPNET e QualNet, enquanto entre os livres, podem-se destacar NS2, NS3, J-Sim e GNS3. O simulador utilizado na análise deste trabalho será o GNS3, que alia ferramentas de simulação com uma interface gráfica amigável.
+
+	Tais simulações, porém, não são perfeitas, e frequentemente são limitadas pelo hardware do computador que as está executando.
+
+
+\section{HTTP}
+\label{ch:http}
+
+	O HTTP, sigla para Hypertext Transfer Protocol (Protocolo de Transferência de Hipertexto), é um protocolo desenvolvido para realizar a transferência de hipertexto em uma rede e é a base da World Wide Web (WWW).
+
+	O conceito de hipertexto surgiu em 1965, antes do surgimento da Internet, por Theodor Holm Nelson, filósofo e sociólogo nascido nos Estados Unidos e conhecido por ser um dos pioneiros da Tecnologia da Informação. Segundo Nelson (1981, p. 14), a escrita e a leitura não devem ser necessariamente sequenciais. Hipertextos, na sua visão, são um conjunto de nós que representam documentos de texto e se conectam entre si através de hyperlinks (hiperligações) formando uma rede. O conceito foi aplicado por Tim Berners-Lee em 1989 na idealização e desenvolvimento da World Wide Web. O protocolo fornece o acesso do usuário a esse conjunto de hipertextos na forma conhecida como páginas da Web, com o auxílio de Navegador Web. Como hoje uma página da Web pode conter textos, vídeos, imagens e sons, “o termo hipertexto, cunhado para designar documentos de texto vinculados, foi alterado para hipermídia”. \cite{forouzanb}
+
+Esse protocolo atua na camada de aplicação, quinta camada do Conjunto de Protocolos TCP/IP e a sétima camada do Modelo OSI (Interconexão de Sistemas Abertos), na qual é responsável pelo provimento de serviços ao usuário.
+
+O HTTP está sob o paradigma Cliente/Servidor e é um protocolo de requisição/resposta que atua na troca de mensagens de maneira confiável. O “cliente” solicita uma conexão com o “servidor” para mandar requisições HTTP. O “servidor”, por sua vez, aceita conexões para responder requisições HTTP. Uma mesma máquina pode atuar tanto como “cliente” quanto como “servidor”, apenas depende da conexão na qual se encontra. [RFC 7230, 2014, p. 7]
+
+O Protocolo de Transferência de Hipertexto se comunica com a camada de transporte através do Transmission Control Protocol (TCP). O TCP é um protocolo orientado à conexão, ou seja, para efetuar uma requisição deve-se estabelecer uma conexão entre o cliente e o servidor antes da transação, e após essa ser concluída, a conexão deve ser encerrada, provendo assim confiabilidade no envio e recebimento dos dados. O protocolo ainda provê verificação de erros e entrega na sequência correta dos pacotes. O HTTP apenas usufrui das características do TCP, sem precisar se preocupar com as trocas de dados. Consequentemente, é visível ao HTTP apenas uma conexão lógica confiável entre Cliente/Servidor.
+
+O protocolo é usado desde o surgimento da WWW comercial, em 1990. Sua primeira versão foi o HTTP/0.9. Foi seguida pelo HTTP/1.0 e, em 1999, definiu-se o HTTP/1.1, atual versão do HTTP.
+
+Segundo Forouzan e Mosharraf (2013, p. 58) \cite{forouzanb}, o protocolo não oferece nenhuma segurança, porém ele pode ser executado sobre a Camada de Sockets Segura (SSL), conhecido como HTTPS (Hypertext Transfer Protocol Secure) que assegura aspectos de segurança como confidencialidade, autenticação e integridade dos dados.
+
+\section{Wireshark}
+
+
+
+Wireshark é um software utilizado para análise de protocolos de rede, disponível para múltiplas plataformas, incluindo Windows, Linux, MacOS, Solaris, FreeBSD, NetBSD e outras, distribuído sob a licença GNU General Public License (GLC) versão 2.
+
+Vindo originalmente de um projeto iniciado em 1998 por Gerald Combs, hoje é o software mais utilizado no mundo em sua categoria, sendo mantido pela Wireshark Foundation.
+
+No contexto deste trabalho, o Wireshark será utilizado para analisar o protocolo HTTP entre máquinas virtuais conectadas por meio do software GNS3.
+
+\section{VirtualBox}
+
+O VirtualBox é um software de virtualização multiplataforma desenvolvido pela empresa alemã Innotek em 2007 sob a licença GNU General Public License (GPL) v2.0\footnote[1]{GNU General Public License v2.0: um software que está sob a licença GPL v2.0 deve possibilitar acesso de seus códigos-fonte a terceiros. Esses códigos podem ser alterados e distribuídos livremente, e utilizados em outros programas livres com apenas uma restrição: toda e qualquer redistribuição deve ser feita sob a mesma licença. O software que está sob essa licença pode ser gratuito ou pago.}. Em 2008, a empresa estadunidense Sun Microsystems adquiriu a Innotek e consequentemente o software. A Sun Microsystems foi, então, comprada em 2009 pela Oracle, juntamente com todos os seus softwares. 	
+	
+	O VirtualBox é hoje mantido pela Oracle. A empresa oferece tanto uma versão base gratuita sob licença GPL v2.0, quanto uma versão estendida paga sob a licença Personal Use and Evaluation Licence (PUEL). Neste “trabalho” (???) será usado o VirtualBox versão 5.1.8 gratuita.
+	
+	O software pode ser instalado nos sistemas operacionais Windows, GNU/Linux, MacOS e Solaris e possibilita a criação de uma ou mais máquinas virtuais, propiciando a oportunidade de instalação de sistemas operacionais quaisquer nessas máquinas, compartilhando de um mesmo hardware físico. A máquina virtual é vista com uma máquina independente.
+	
+	A instalação básica de uma máquina virtual provê acesso à rede local e à Internet, porém a rede local reconhece tanto o sistema operacional da máquina física como o da máquina virtual como apenas uma máquina, logo ambos possuem o mesmo Endereço IP. O VirtualBox oferece ferramentas para que uma máquina virtualizada seja identificada pela rede local e assim é atribuído um endereço IP à máquina. Essa configuração será explicada com detalhes no capítulo 2.
+	
+	 
