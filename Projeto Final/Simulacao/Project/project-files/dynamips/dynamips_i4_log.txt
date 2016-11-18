@@ -1,0 +1,12 @@
+Nov 18 08:40:33.334 HYPERVISOR: Release 0.2.15-amd64/Linux (tag 2015060118)
+Nov 18 08:40:33.334 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59102.
+Nov 18 08:40:33.348 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 18 08:40:33.349 HYPERVISOR: exec_cmd: hypervisor working_dir /home/marlon/udesc/BCC/REC/Projeto Final/Simulacao/Project/project-files/dynamips 
+Nov 18 08:40:33.349 GENERAL: working_dir=/home/marlon/udesc/BCC/REC/Projeto Final/Simulacao/Project/project-files/dynamips
+Nov 18 08:40:33.349 HYPERVISOR: exec_cmd: atmsw create ATM1 
+Nov 18 08:42:49.462 HYPERVISOR: exec_cmd: nio create_udp udp-19eac852-5a76-4822-9028-d0efae668304 10000 127.0.0.1 10001 
+Nov 18 08:43:46.954 HYPERVISOR: exec_cmd: nio delete udp-19eac852-5a76-4822-9028-d0efae668304 
+Nov 18 08:43:47.237 HYPERVISOR: exec_cmd: atmsw delete ATM1 
+Nov 18 08:43:47.241 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 18 08:43:47.556 HYPERVISOR: Stopped.
+Nov 18 08:43:47.557 GENERAL: reset done.
