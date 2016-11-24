@@ -1,0 +1,64 @@
+: Saved
+:
+ASA Version 8.4(2)
+!
+hostname ciscoasa
+names
+!
+interface Ethernet0/0
+ switchport access vlan 2
+!
+interface Ethernet0/1
+ switchport access vlan 1
+!
+interface Ethernet0/2
+ switchport access vlan 1
+!
+interface Ethernet0/3
+ switchport access vlan 1
+!
+interface Ethernet0/4
+ switchport access vlan 1
+!
+interface Ethernet0/5
+ switchport access vlan 1
+!
+interface Ethernet0/6
+ switchport access vlan 1
+!
+interface Ethernet0/7
+ switchport access vlan 1
+!
+interface Vlan1
+ nameif inside
+ security-level 100
+ ip address 192.168.1.1 255.255.255.0
+!
+interface Vlan2
+ nameif outside
+ security-level 0
+ ip address dhcp
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+telnet timeout 5
+ssh timeout 5
+!
+dhcpd address 192.168.1.5-192.168.1.35 inside
+dhcpd enable inside
+!
+dhcpd auto_config outside
+!
+!
+!
+!
+!
