@@ -37,7 +37,9 @@ Para redes de computadores não é diferente. A simulação de tais redes fornec
 
 Há várias aplicações de \textit{software}, tanto livres quanto comerciais, que permitem simular a comunicação entre computadores. Entre os comerciais, podem ser citados \textit{OPNET} e \textit{QualNet}, enquanto entre os livres, podem-se destacar \textit{NS2}, \textit{NS3}, \textit{J-Sim} e \textit{GNS3}. O simulador utilizado na análise deste trabalho será o \textit{GNS3}, que alia ferramentas de simulação com uma interface gráfica amigável \cite{redesSim}.
 
-Tais simulações, porém, não são perfeitas, e frequentemente são limitadas pelo hardware do computador que as está executando.
+Havendo uma variedade de simuladores de rede disponível, um dos critérios para se definir qual será utilizado em uma dada aplicação é que aspectos de rede o simulador suporta. Alguns aspectos de rede mínimos que um simulador deve suportar são: permitir a representação de diferentes topologias e cenários de rede, especificar os nós, seus links e o tráfego entre os nós da rede, além de permitir a análise desse tráfego. Já um simulador mais elaborado deve permitir a especificação dos protocolos de transmissão e fornecer uma interface gráfica para a visualização da simulação \cite{redesSim}.
+
+Tais simulações, porém, não são perfeitas, e frequentemente são limitadas pelo hardware do computador que as está executando. Em especial em simuladores como o GNS3, em que os computadores da rede são máquinas virtuais rodando sobre o mesmo \textit{hardware}, o alto consumo de memória pelo simulador torna inviável a simulação de redes grandes.
 
 \subsection{HTTP}
 O HTTP, sigla para \textit{Hypertext Transfer Protocol} (Protocolo de Transferência de Hipertexto), é um protocolo desenvolvido para realizar a transferência de hipertexto em uma rede e é a base da WWW.
