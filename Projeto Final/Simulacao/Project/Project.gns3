@@ -3,39 +3,96 @@
     "name": "Project",
     "project_id": "725e2e47-84a9-45b5-b859-dfdf87526276",
     "revision": 4,
+    "show_port_names": true,
     "topology": {
         "links": [
             {
                 "description": "Link from R1 port Ethernet0 to SW1 port 8",
                 "destination_node_id": 1,
                 "destination_port_id": 8,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "8",
+                    "x": 65.09760293583776,
+                    "y": -10.906911759852502
+                },
                 "id": 1,
                 "source_node_id": 5,
-                "source_port_id": 26
+                "source_port_id": 26,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 3.402397064162244,
+                    "y": 48.906911759852505
+                }
             },
             {
                 "description": "Link from R1 port Ethernet1 to SW2 port 8",
                 "destination_node_id": 2,
                 "destination_port_id": 16,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "8",
+                    "x": 5.652111615803523,
+                    "y": -10.628998460410582
+                },
                 "id": 2,
                 "source_node_id": 5,
-                "source_port_id": 25
+                "source_port_id": 25,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e1",
+                    "x": 62.84788838419648,
+                    "y": 48.628998460410585
+                }
             },
             {
                 "description": "Link from SW1 port 1 to Cliente port Ethernet0",
                 "destination_node_id": 3,
                 "destination_port_id": 17,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 34.07358409169916,
+                    "y": -10.469035929158352
+                },
                 "id": 3,
                 "source_node_id": 1,
-                "source_port_id": 1
+                "source_port_id": 1,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 33.92641590830084,
+                    "y": 55.96903592915835
+                }
             },
             {
-                "description": "Link from SW2 port 1 to Servidor port Ethernet0",
-                "destination_node_id": 4,
-                "destination_port_id": 18,
-                "id": 4,
-                "source_node_id": 2,
-                "source_port_id": 9
+                "description": "Link from Servidor port Ethernet0 to SW2 port 1",
+                "destination_node_id": 2,
+                "destination_port_id": 9,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 42.958119978436514,
+                    "y": 55.298555270992416
+                },
+                "id": 5,
+                "source_node_id": 6,
+                "source_port_id": 29,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 25.041880021563486,
+                    "y": -9.79855527099241
+                }
             }
         ],
         "nodes": [
@@ -137,7 +194,7 @@
                     {
                         "description": "connected to Servidor on port Ethernet0",
                         "id": 9,
-                        "link_id": 4,
+                        "link_id": 5,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -247,47 +304,6 @@
                 "y": 101.5
             },
             {
-                "description": "VirtualBox VM",
-                "id": 4,
-                "label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "Servidor",
-                    "x": 0.5625,
-                    "y": -25.0
-                },
-                "linked_clone": false,
-                "port_name_format": "Ethernet{0}",
-                "ports": [
-                    {
-                        "adapter_number": 0,
-                        "description": "connected to SW2 on port 1",
-                        "id": 18,
-                        "link_id": 4,
-                        "name": "Ethernet0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    }
-                ],
-                "properties": {
-                    "acpi_shutdown": false,
-                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
-                    "adapters": 1,
-                    "console": 5001,
-                    "enable_remote_console": false,
-                    "headless": false,
-                    "name": "Servidor",
-                    "ram": 512,
-                    "use_any_adapter": false,
-                    "vmname": "Servidor"
-                },
-                "server_id": 1,
-                "type": "VirtualBoxVM",
-                "vm_id": "3c3b5217-0ba3-4c59-b442-cf94d320fdc0",
-                "x": 21.5,
-                "y": 96.5
-            },
-            {
                 "description": "Router c1700",
                 "dynamips_id": 1,
                 "id": 5,
@@ -299,12 +315,6 @@
                     "y": -25.0
                 },
                 "ports": [
-                    {
-                        "adapter_number": 0,
-                        "id": 19,
-                        "name": "FastEthernet0",
-                        "port_number": 0
-                    },
                     {
                         "adapter_number": 0,
                         "description": "connected to SW2 on port 8",
@@ -322,6 +332,12 @@
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 16
+                    },
+                    {
+                        "adapter_number": 0,
+                        "id": 19,
+                        "name": "FastEthernet0",
+                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -354,38 +370,49 @@
                 "server_id": 1,
                 "type": "C1700",
                 "vm_id": "47ceff0b-eb88-4462-8d45-98067eb884b5",
-                "x": -77.0,
-                "y": -132.0
-            }
-        ],
-        "notes": [
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "10.234.51.254",
-                "x": -288.0,
-                "y": -17.5
+                "x": -83.0,
+                "y": -108.0
             },
             {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.50.254",
-                "x": 86.0,
-                "y": -15.5
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "10.234.51.1",
-                "x": -273.0,
-                "y": 119.5
-            },
-            {
-                "color": "#ff000000",
-                "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                "text": "192.168.50.1",
-                "x": 93.0,
-                "y": 115.5
+                "description": "VirtualBox VM",
+                "id": 6,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "Servidor",
+                    "x": 0.5625,
+                    "y": -25.0
+                },
+                "linked_clone": false,
+                "port_name_format": "Ethernet{0}",
+                "ports": [
+                    {
+                        "adapter_number": 0,
+                        "description": "connected to SW2 on port 1",
+                        "id": 29,
+                        "link_id": 5,
+                        "name": "Ethernet0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    }
+                ],
+                "properties": {
+                    "acpi_shutdown": false,
+                    "adapter_type": "Intel PRO/1000 MT Desktop (82540EM)",
+                    "adapters": 1,
+                    "console": 5001,
+                    "enable_remote_console": false,
+                    "headless": false,
+                    "name": "Servidor",
+                    "ram": 512,
+                    "use_any_adapter": false,
+                    "vmname": "Servidor"
+                },
+                "server_id": 1,
+                "type": "VirtualBoxVM",
+                "vm_id": "7ba5d1ea-7631-416e-8b64-a99478d8c577",
+                "x": 45.5,
+                "y": 112.5
             }
         ],
         "servers": [
